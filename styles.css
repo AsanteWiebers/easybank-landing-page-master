@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* colours */
+
+    --primary-Dark-Blue: hsl(233 26 24);
+    --primary-Lime-Green: hsl(136 65 51);
+    --primary-Bright-Cyan: hsl(192 70 51);
+    --neutral-Grayish-Blue: hsl(233 8 62);
+    --neutral-Light-Grayish-Blue: hsl(220 16 96);
+    --neutral-Very-Light-Gray: hsl(0 0 98);
+    --white: hsl(0 0 100%);
+
+    /* ------- */
+
+    /* fonts */
+
+    --ff-public-sans: 'Public Sans', sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-100: 1.125rem;
+    --fs-200: 1.2rem;
+    --fs-300: 1.3rem;
+
+    /* ------- */
+
+}
+
+img {
+
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+figure,
+picture {
+    margin: 0;
+}
+
+input,
+select,
+button,
+textarea {
+    font: inherit;
+}
+
+body {
+
+    font-size: var(--fs-100);
+    font-family: var(--ff-public-sans);
+    min-height: 100%;
+    line-height: 1.5;
+    overflow: hidden;
+}
