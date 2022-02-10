@@ -1,20 +1,23 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
+/* custom properties */
 
 :root {
 
     /* colours */
 
-    --primary-Dark-Blue: hsl(233 26 24);
-    --primary-Lime-Green: hsl(136 65 51);
-    --primary-Bright-Cyan: hsl(192 70 51);
-    --neutral-Grayish-Blue: hsl(233 8 62);
-    --neutral-Light-Grayish-Blue: hsl(220 16 96);
-    --neutral-Very-Light-Gray: hsl(0 0 98);
-    --white: hsl(0 0 100%);
+    /* Primary */
+
+    --primary-dark-blue: 233 26% 24%;
+    --primary-lime-green: 136 65% 51%;
+    --primary-bright-cyan: 192 70% 51%;
+    
+
+    /* Neutral */
+
+    --neutral-grayish-blue: 233 8% 62%;
+    --neutral-light-grayish-blue: 220 16% 96%;
+    --neutral-very-light-gray: 0 0% 98%;
+    --neutral-white: 0 0 100%;
 
     /* ------- */
 
@@ -26,12 +29,25 @@
     --fw-regular: 400;
     --fw-bold: 700;
 
-    --fs-100: 1.125rem;
-    --fs-200: 1.2rem;
-    --fs-300: 1.3rem;
+    /* ------ */
+
+    /* font sizes */
+
+    --fs-100: 1rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-400: 1.5rem;
 
     /* ------- */
 
+}
+
+/* resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 img {
@@ -60,6 +76,8 @@ textarea {
     font: inherit;
 }
 
+/* --------- */
+
 body {
 
     font-size: var(--fs-100);
@@ -67,4 +85,82 @@ body {
     min-height: 100%;
     line-height: 1.5;
     overflow: hidden;
+}
+
+/* Utility classes */
+
+.container {
+    padding: 0 2em;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap,1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap,1rem);
+}
+
+.bg-white {
+    background-color: hsl(var(--neutral-white));
+}
+
+.bg-dark-blue {
+    background-color: hsl(var(--primary-dark-blue))
+}
+
+.bg-bright-cyan {
+    background-color: hsl(var(--primary-bright-cyan));
+}
+
+.bg-lime-green {
+    background-color: hsl(var(--primary-lime-green));
+}
+
+.text-white {
+    color: hsl(var(--neutral-white));
+}
+
+.text-blue {
+    color: hsl(var(--primary-dark-blue));
+}
+
+.ff-sans {
+    font-family: var(--ff-public-sans);
+}
+
+.fs-100 {
+    font-size: var(--fs-100);
+}
+
+.fs-200 {
+    font-size: var(--fs-200);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.letterspacing-1 {
+    letter-spacing: 4.75px; 
+}
+
+.letterspacing-2 {
+    letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 2.35px;
 }
