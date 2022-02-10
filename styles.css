@@ -48,12 +48,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-img {
-
-    display: block;
-    max-width: 100%;
+    margin: 0;
 }
 
 h1,
@@ -69,11 +64,26 @@ picture {
     margin: 0;
 }
 
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 input,
 select,
 button,
 textarea {
     font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* --------- */
@@ -84,7 +94,7 @@ body {
     font-family: var(--ff-public-sans);
     min-height: 100%;
     line-height: 1.5;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* Utility classes */
