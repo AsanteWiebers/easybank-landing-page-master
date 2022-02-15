@@ -17,7 +17,7 @@
     --neutral-grayish-blue: 233 8% 62%;
     --neutral-light-grayish-blue: 220 16% 96%;
     --neutral-very-light-gray: 0 0% 98%;
-    --neutral-white: 0 0 100%;
+    --neutral-white: 0 0% 100%;
 
     /* ------- */
 
@@ -173,4 +173,17 @@ body {
 
 .letter-spacing-3 {
     letter-spacing: 2.35px;
+}
+
+/* buttons */
+
+.btn {
+    background-color: hsl(var(--primary-lime-green));
+    border-radius: 30px;
+    color: hsl(var(--neutral-white));
+    padding: .8em 2em;
+}
+
+.nav-list {
+    display: none;
 }
