@@ -177,12 +177,18 @@ body {
 
 /* buttons */
 
+.top-btn {
+    display: none;
+}
+
 .btn {
-    background-color: hsl(var(--primary-lime-green));
+    background: linear-gradient(to right, green ,#33ccff) ;
     border-radius: 30px;
     color: hsl(var(--neutral-white));
     padding: .8em 2em;
 }
+
+/* navigation */
 
 .nav-list {
     display: none;
