@@ -193,3 +193,20 @@ body {
 .nav-list {
     display: none;
 }
+
+.nav {
+    display: flex;
+    padding: 1.6em;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 2.1em;
+    right: 1.5em;
+}
+
+/* hero section */
+
+.bg-hero-mobile {
+    background-image: url(/images/bg-intro-mobile.svg);
+}
