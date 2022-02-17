@@ -32,7 +32,7 @@
     /* ------ */
 
     /* font sizes */
-
+    --fs-90: .8rem;
     --fs-100: 1rem;
     --fs-200: 1.2rem;
     --fs-300: 1.7rem;
@@ -163,6 +163,10 @@ body {
     font-family: var(--ff-public-sans);
 }
 
+.fs-90 {
+    font-size: var(--fs-90);
+}
+
 .fs-100 {
     font-size: var(--fs-100);
 }
@@ -205,6 +209,10 @@ body {
 
 .letter-spacing-3 {
     letter-spacing: 2.35px;
+}
+
+.center {
+    text-align: center;
 }
 
 /* buttons */
@@ -252,7 +260,6 @@ body {
 
 .main-text {
     text-align: center;
-    
 }
 
 .narrow-width {
@@ -274,3 +281,14 @@ body {
 
 /* Section */
 
+.section {
+    flex-direction: column;
+}
+
+.section-card {
+    background-color: hsl(var(--neutral-very-light-gray));
+}
+
+.img-card {
+    border-radius: 10px 10px 0 0;
+}
