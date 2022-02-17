@@ -291,4 +291,41 @@ body {
 
 .img-card {
     border-radius: 10px 10px 0 0;
+    margin: 0 0 2em;
+    width: 100%;
+}
+
+p.accent {
+    color: hsl(var(--primary-dark-blue));
+    padding:  0 0 1em;
+    
+}
+
+.text-card-container {
+   padding: 2em; 
+}
+
+/* footer  */
+
+.footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-logo {
+    padding: 2em 0 1em;
+}
+
+.social-container {
+    margin: 0 auto;
+    padding: 0 0 1em;
+}
+
+.footer-links {
+    color: hsl(var(--neutral-white));
+    padding: 0 0 1em ;
+}
+
+.copyright {
+    padding: 3em 0 3em ;
 }
