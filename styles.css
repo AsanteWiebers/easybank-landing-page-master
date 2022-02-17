@@ -219,6 +219,7 @@ body {
 
 .top-btn {
     display: none;
+    
 }
 
 .btn {
@@ -328,4 +329,41 @@ p.accent {
 
 .copyright {
     padding: 3em 0 3em ;
+}
+
+
+@media(min-width:1000px){
+
+    /* navigation */
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav__links {
+        padding: 0 1em 0;
+    }
+
+    .top-btn {
+        display: block;
+        background: linear-gradient(to right, green ,#33ccff) ;
+        border-radius: 30px;
+        color: hsl(var(--neutral-white));
+        padding: .8em 2em;
+    }
 }
