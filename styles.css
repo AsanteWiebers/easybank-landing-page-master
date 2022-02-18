@@ -233,11 +233,21 @@ body {
 
 .underline-indicators > * {
     padding: var(--underline-gap, 1rem) 0;
+    position: relative;
 
     border: 0;
 
-    border-bottom: solid hsl(var(--clr-white) / 0) ;   
+    border-bottom: solid hsl(var(--neutral-white) / 0);   
     cursor: pointer;
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+    border-color: hsl(var(--primary-lime-green) /.5);
+}
+
+.underline-indicators > .active {
+    border-color: hsl(var(--primary-lime-green));
 }
 
 .top-btn:hover,
