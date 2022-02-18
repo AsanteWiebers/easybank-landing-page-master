@@ -252,6 +252,10 @@ body {
     width: 100%;
 }
 
+.bg-intro-desktop {
+    display: none;
+}
+
 .hero-text {
     text-align: center;
     height: 40vh;
@@ -373,6 +377,10 @@ p.accent {
         display: none;
     }
 
+    .bg-intro-desktop {
+        display: block;
+    }
+
     .hero {
         display: flex;
     }
@@ -380,7 +388,33 @@ p.accent {
     .hero-text {
         padding: 7em 0 0 ;
         text-align: left;
-        width: 50%;
+        width: 80%;
     }
 
+    /* main area */
+    /* .main {
+        background-color: hsl(var(--neutral-light-grayish-blue));
+        width: 100%;
+    } */
+
+    .main-text {
+        text-align: left;
+        width: 55%;
+    }
+
+    #main-heading {
+        width: 100%;
+        margin-right: 16em;
+    }
+
+    .main-section {
+        text-align: left;
+        flex-direction: row;
+        
+    }
+
+    .main-img {
+        padding-right: 11em;
+    }
+    
 }
