@@ -272,9 +272,39 @@ p.accent:hover,
     padding: 1.6em;
 }
 
+.mob_nav {
+   
+    margin-top: 5em;
+    border-radius: 10px;
+    background-color: hsl(var(--neutral-grayish-blue));
+    color: hsl(var(--primary-dark-blue));
+    position: absolute;
+    padding: 5.5em;
+}
+
+.mob_list {
+    text-align: center;
+}
+
+.mob_logo {
+    justify-content: center;
+    margin: 0 0 2em;
+}
+
+.mob_nav_links {
+    padding: 1em 0 0 ;
+    font-weight: 700;
+}
 .hamburger-icon {
     position: absolute;
     top: 2.1em;
+    right: 1.5em;
+}
+
+.close-icon {
+    display: none;
+    position: absolute;
+    top: 1.7em;
     right: 1.5em;
 }
 
