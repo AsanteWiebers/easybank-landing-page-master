@@ -273,7 +273,7 @@ p.accent:hover,
 }
 
 .mob_nav {
-   
+    display: none;
     margin-top: 5em;
     border-radius: 10px;
     background-color: hsl(var(--neutral-grayish-blue));
@@ -295,6 +295,7 @@ p.accent:hover,
     padding: 1em 0 0 ;
     font-weight: 700;
 }
+
 .hamburger-icon {
     position: absolute;
     top: 2.1em;
